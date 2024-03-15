@@ -1,0 +1,14 @@
+Hierarchical clustering Institusion
+    Two ways to do it:
+        1.Agglomerative (Bottom Up Approach)
+            Steps:
+                a.Make a each data point a single point cluster - That forms N-Clusters
+                b.Take the two closest points and make them a cluster. This makes N-1 Clusters
+                c.Take two closest clusters and make them one cluster . This forms N-2 Clusters
+                    ways to find distace between two clusters:
+                        1.closest points distace
+                        2.Furest points distance
+                        3.distace between average of all points in the cluster
+                        4.distace between the centroids
+                d.Repad step-c until there is only one CLuster remains
+        2.Divisive

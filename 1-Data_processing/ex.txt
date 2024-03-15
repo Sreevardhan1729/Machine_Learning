@@ -1,0 +1,17 @@
+Machine Learning is done in three steps
+    1. Data preprossing
+       a.import the Data
+       b.Cleaning the data
+		c.split it into parts
+    2. Data Modeling
+        a.Build a Model
+        b.train the Model
+        c.Make Predictions
+    3. Evaluation
+        a.Calculate performance Matrix
+        b.Make a verdict
+
+Feature Scaling
+	It is always applied to columns
+	1. Normalization - (val-min/max-min) - range(0,1)
+	2. Standardization - (val - mean/ S.D) - range(-1,3)

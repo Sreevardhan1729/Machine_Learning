@@ -1,0 +1,3 @@
+SUPPORT VECTOR MACHINE 
+    these mainly focues on items which are most similar to the other
+    

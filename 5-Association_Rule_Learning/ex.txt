@@ -1,0 +1,12 @@
+Apriori
+    Steps:
+        1.set minimum support and confidence
+        2.Take all the subsets in transactions having higher support than minimum support
+        3.Take all the rules of these subsets hvaing higher confidence than minimum confidence
+        4.Sort the rules by decreasing lift
+
+Eclat
+    Steps:
+        1.Set a minimum support
+        2.Take all subsets in the transactions having higher support than minimum support
+        3.Sort these subsets by decreasing support

@@ -1,0 +1,39 @@
+Assumtions of Linear Regresssion
+    1.Linearity (Linear relationship between Y and X)
+    2.Homoscedasticity(convergence or divergence should not be there)
+    3.Multivariate Normality
+    4.Independence(the data columns should be independent)
+    5.Lack of Multicollinearity
+    extra->The Outlier Check
+5 Methods of building models
+    1.All in
+    2.Backward Elimination
+        Steps:
+            1)Select a Significance level to stay in the models (eg. SL=0.05)
+            2)fit the full model with all possible predicts
+            3)consider a predict with higest p-value, if p>SL go to step 4 otherwise go to FIN (FIN - Your Model is Ready)
+            4)remove that predict
+            5)Fit Model without this variable (then again go to stpe-3)
+    3.Forward Elimination
+        Steps:
+            1)Select a Significance level to enter the model (eg. SL = 0.05)
+            2)Fit all simple regression models y ~ X(n) Select one with lowest P-value
+            3)Keep this variable and fit all possible models with one extra predictor added to ones you already have
+            4)Consider the predictor with the lowest p-value. If p<SL, go to step-3 otherwise go to FIN (FIN - Keep the previous model previ)
+    4.Bidirectional Elimination
+        Steps:
+            1)Select a significance level to enter and stay in the model (eg. SLENTER = 0.05,SLSTAY = 0.5)
+            2)Perform the next step of Forward Selection (new variables must have p<SLENTER to enter)
+            3)Perform all steps of Backward Elimination (Old variables must have p<SLSTAY to stay) ->go to step-3
+            4)no new variables can enter and no new variables can leave then do FIN (FIN - Your model is ready)
+    5.Score Comparision
+    a) Step wise regressor
+        points 2,3,4
+Random Forest regression
+    Steps:
+        1) pick at random k data points from the data set
+        2)Build a Decision tree based on the K data points
+        3)Chose the number Ntree of trees you want to build and reapt step 1&2.
+        4)for the new data, make each one of the Ntree trees to predict the Y for the data point in the qesion and assign the new data point
+        the average accross all the predicted Y values
+        
